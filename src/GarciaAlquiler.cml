@@ -1,0 +1,44 @@
+ContextMap AlquilerMap{
+    contains GestionAlquileresContext
+    contains GestionVehiculosContext
+    contains GestionClientesContext
+    contains PagosContext
+    contains AutorizacionAutenticacionContext
+
+    
+        /* Cooperación */
+    GestionAlquileresContext [P]<->[P] GestionVehiculosContext
+    GestionAlquileresContext [P]<->[P] GestionClientesContext
+    GestionAlquileresContext [P]<->[P] PagosContext
+
+    /* Conformista */
+    GestionClientesContext [CF]<-[PL] AutorizacionAutenticacionContext
+
+    /* Anti-corruption layer */
+    GestionVehiculosContext [D,ACL]<-[U] GestionAlquileresContext
+
+     /* Customer - Supplier */
+    GestionVehiculosContext [D]<-[U] AutorizacionAutenticacionContext
+
+}
+
+
+BoundedContext GestionAlquileresContext {
+    
+}
+
+BoundedContext GestionVehiculosContext {
+    
+}
+
+BoundedContext GestionClientesContext {
+    
+}
+
+BoundedContext PagosContext {
+    
+}
+
+BoundedContext AutorizacionAutenticacionContext {
+    
+}
