@@ -1,8 +1,5 @@
 # SWIIIGarciaAlquiler
-La empresa XYZ desea implementar un sistema de alquiler de vehículos para turistas que visitan su región. EI objetivo principal
-es mejorar la experiencia de los usuarios proporcionando un servicio eficiente y una amplia variedad de opciones de vehiculos
-EI sistcma debe ser capaz de , el , la información de los clientes, los pagos y garantizar
-la seguridad de los datos.
+La empresa XYZ desea implementar un sistema de alquiler de vehículos para turistas que visitan su región. EI objetivo principal es mejorar la experiencia de los usuarios proporcionando un servicio eficiente y una amplia variedad de opciones de vehiculos.
 
 ## Características
 * **Gestionar las reservas** 
